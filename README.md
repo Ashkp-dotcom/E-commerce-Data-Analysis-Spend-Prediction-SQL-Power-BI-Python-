@@ -1,43 +1,66 @@
-# E-commerce Power BI Dashboard
+# E-commerce Data Analysis using SQL & Power BI
 
-This Power BI dashboard project analyzes the sales and traffic performance of an e-commerce business, offering a detailed view into revenue trends, user activity, and product-level insights.
+This end-to-end BI project demonstrates how raw e-commerce event-level data was transformed using SQL and visualized with Power BI to uncover actionable insights around revenue, product performance, user activity, and traffic trends.
 
 ---
 
-## Dashboard Pages
+## 🛠 Project Workflow
+
+- **SQL**: Queried and transformed raw sales data to create analysis-ready tables (event trends, brand revenue, monthly category performance, etc.)
+- **Power BI**: Built an interactive dashboard with KPIs, visual trends, and user-driven slicers
+- **Data Analysis**: Delivered insights on user engagement patterns, peak sales periods, and high-performing categories
+
+---
+
+## 📊 Dashboard Pages
 
 ### **1. E-commerce Overview**
-- **KPIs:** Total Revenue, Potential Revenue, Total Traffic, Total Products
-- **Visuals:**
-  - Total Revenue by Month (Stacked Column Chart)
-  - Total Revenue by Day (Stacked Bar Chart)
-  - Total Revenue by Time (Stacked Bar Chart)
+- **KPIs**: Total Revenue, Potential Revenue, Total Traffic, Total Products
+- **Visuals**:
+  - Revenue by Month (Stacked Column Chart)
+  - Revenue by Day (Stacked Bar Chart)
+  - Revenue by Hour (Stacked Bar Chart)
   - Traffic by Day (Line Chart)
-  - Traffic by Time (Line Chart)
-- **Slicers:** Brand, Category, State, Channel
+  - Traffic by Hour (Line Chart)
+- **Slicers**: Brand, Category, State, Channel
 
 ### **2. Revenue-wise Sub Category**
-- Total Revenue by Brand (Stacked Bar Chart)
-- Total Revenue by Category (Stacked Bar Chart)
-- Total Revenue by Sub-category 1 (Line Chart)
-- Total Revenue by Sub-category 2 (Line Chart)
-- Total Revenue by State (Treemap)
-- **Slicer:** Channel
+- Revenue by Brand (Stacked Bar Chart)
+- Revenue by Category (Stacked Bar Chart)
+- Revenue by Sub-category 1 (Line Chart)
+- Revenue by Sub-category 2 (Line Chart)
+- Revenue by State (Treemap)
+- **Slicer**: Channel
 
 ---
 
-## Key Insights
-- Revenue trends vary significantly by brand and time of day.
-- Certain categories and sub-categories generate a higher share of total revenue.
-- Website traffic is strongest on specific days and times, showing user engagement patterns.
-- The "Potential Revenue" metric gives an estimate of unrealized value based on traffic.
+## 🔍 SQL Insights Extracted
+- Total Revenue, Total Events, and Unique Users
+- Day-wise and Hour-wise engagement patterns
+- Top 10 Brands and Sub-categories by Revenue
+- State-wise revenue contribution
+- Monthly Revenue by Category (October & November)
+
 
 ---
 
-## Tools Used
-- Power BI
-- Data Modeling & DAX
-- Interactive Visuals & Slicers
+## 💡 Key Insights
+- **Brand Breakdown**: samsung leads maximum customer, followed by apple and Xiaomi.
+- **Time Analysis**: Peak user engagement occurs in the Afternoon and Evening.
+- **Geographic Trends**: GA and KY are top-performing states by revenue.
+- **Product Focus**: smpartphone & notebook dominate revenue across both months.
+
+---
+
+## 🧰 Tools Used
+- **SQL Server** – Data cleaning and preparation
+- **Power BI** – Interactive dashboard, slicers, visualizations
+- **Excel** – Initial preprocessing
+- **DAX** – Custom metrics and filters
+
+---
+
+
 
 ---
 
