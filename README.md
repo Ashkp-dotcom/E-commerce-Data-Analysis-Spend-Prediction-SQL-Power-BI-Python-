@@ -1,14 +1,15 @@
-# E-commerce Data Analysis using SQL & Power BI
+# E-commerce Data Analysis & Spend Prediction (SQL + Power BI + Python)
 
-This end-to-end BI project demonstrates how raw e-commerce event-level data was transformed using SQL and visualized with Power BI to uncover actionable insights around revenue, product performance, user activity, and traffic trends.
+This end-to-end analytics project demonstrates how raw e-commerce event-level data was transformed using SQL, visualized with Power BI, and extended with a regression model in Python to predict user-level spending behavior.
 
 ---
 
 ## 🛠 Project Workflow
 
-- **SQL**: Queried and transformed raw sales data to create analysis-ready tables (event trends, brand revenue, monthly category performance, etc.)
-- **Power BI**: Built an interactive dashboard with KPIs, visual trends, and user-driven slicers
-- **Data Analysis**: Delivered insights on user engagement patterns, peak sales periods, and high-performing categories
+- **SQL**: Queried and aggregated raw sales data to build insights on traffic, revenue, and product performance.
+- **Power BI**: Designed an interactive dashboard with KPIs, time-based trends, and dynamic filters.
+- **Python (ML)**: Developed a regression model to predict total spending per user based on session features and behavior.
+- **Data Analysis**: Delivered insights on engagement patterns, top brands, peak hours, and user segmentation.
 
 ---
 
@@ -34,36 +35,42 @@ This end-to-end BI project demonstrates how raw e-commerce event-level data was 
 
 ---
 
-## 🔍 SQL Insights Extracted
+## 🔎 SQL Insights Extracted
 - Total Revenue, Total Events, and Unique Users
 - Day-wise and Hour-wise engagement patterns
-- Top 10 Brands and Sub-categories by Revenue
-- State-wise revenue contribution
-- Monthly Revenue by Category (October & November)
+- Top Brands and Sub-categories by Revenue
+- State-wise revenue breakdown
+- Monthly Revenue by Category (Oct & Nov)
 
+---
+
+## 🤖 ML: Spend Prediction Using Linear Regression
+- Aggregated user-level features from 144K+ event records (brand interactions, session counts, avg engagement time, etc.)
+- Applied One-Hot Encoding, StandardScaler, and trained a Linear Regression model.
+- **Model Performance**:  
+  - **R² Score**: 0.13  
+  - **RMSE**: ₹427  
+- Insight: Session-level behavior alone was not a strong predictor of user spending — deeper transactional signals may be required.
 
 ---
 
 ## 💡 Key Insights
-- **Brand Breakdown**: samsung leads maximum customer, followed by apple and Xiaomi.
-- **Time Analysis**: Peak user engagement occurs in the Afternoon and Evening.
-- **Geographic Trends**: GA and KY are top-performing states by revenue.
-- **Product Focus**: smpartphone & notebook dominate revenue across both months.
+- **Brand Breakdown**: Samsung led in customer count, followed by Apple and Xiaomi.
+- **Time Analysis**: Peak engagement occurred in the Afternoon and Evening.
+- **Geographic Trends**: GA and KY were the top-performing states by revenue.
+- **Product Focus**: Smartphones and Notebooks dominated revenue across both months.
 
 ---
 
 ## 🧰 Tools Used
-- **SQL Server** – Data cleaning and preparation
-- **Power BI** – Interactive dashboard, slicers, visualizations
+- **SQL Server** – Data cleaning, transformation, aggregation
+- **Power BI** – Interactive dashboard, KPIs, time trends, filters
+- **Python (Pandas, Scikit-learn)** – Regression modeling
 - **Excel** – Initial preprocessing
-- **DAX** – Custom metrics and filters
+- **DAX** – Custom measures and logic
 
 ---
 
-
-
----
-
-## Screenshots
+## 📸 Screenshots
 ![Ecommerce Dashboard Page 1](Dashboard_Page1_Ecommerce_Overview.png)
 ![Ecommerce Dashboard Page 2](Dashboard_Page2_Subcategory_wise_Revenue.png)
